@@ -106,15 +106,24 @@ export default function Homepage() {
 
     return (
       <main className="container">
-        <header><h1>Welcome to the Metacrafters Novice's Infinite Crypto Currency Making Tree Interface!</h1></header>
-        <h2>{meMessage}</h2>
+        <header><h1 className="Run">Welcome to the Metacrafters!</h1></header>
+        <h2 className="Ram">{meMessage}</h2>
+    
         {initUser()}
-        <style jsx>{`
+        <style jsx >{`
           .container {
+
             text-align: center
+            background-color: lightblue;
           }
+          .Run{ background-color: rgb(0,255,255)}
+          .Ram{background-color:blue}
+          
+          
+         
         `}
         </style>
       </main>
+      
     )    
 }
